@@ -4,5 +4,5 @@ curl "https://nordvpn.com/wp-admin/admin-ajax.php?searchParameters%5B0%5D%5Bname
 cat 1000_proxies.txt | grep -oP "(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" > IPs.txt
 cat 1000_proxies.txt | grep -oP "t\":\"[0-9]{2,}" | grep -oP "[0-9]{2,}" > Ports.txt
 paste -d ":" IPs.txt Ports.txt > 1000_proxies.txt
-rm IPs.txt rm Ports.txt
+rm IPs.txt Ports.txt
 exit 0
