@@ -1,0 +1,2 @@
+# IP-Port-ProxyList-creator-script
+A bourne shell script to fetch fresh proxies from NordVPN and reformat them to "IP:Port" format. The fetcher URL can be modified to fit custom needs.
